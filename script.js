@@ -42,8 +42,8 @@ if (b != "") {
   c = Math.sqrt(SquaredC);
   let RundadC = Math.round(c);
 if(c == Infinity) {
-c = ∞;
-RundadC = ∞;
+c = "∞";
+RundadC = "∞";
 }
 
   alert(`Hypotenuse: ${c}` + ` ${unit}\nRounded: ${RundadC}` + ` ${unit}`)
@@ -72,8 +72,8 @@ if(radius != "") {
 let Arean = Math.PI * radius * radius
 let RoundedArea = Math.round(Arean);
 if(Arean == Infinity) {
-Arean = ∞;
-RoundedArea = ∞;
+Arean = "∞";
+RoundedArea = "∞";
 }
 
 alert(`Area: ${Arean}` + ` ${unit}²\nRounded: ${RoundedArea}` + ` ${unit}²`);
@@ -96,8 +96,8 @@ if(radius != "") {
 let Omkrets = 2 * Math.PI * radius;
 let RoundedOmkrets = Math.round(Omkrets);
 if(Omkrets == Infinity) {
-Omkrets = ∞;
-RoundedOmkrets = ∞;
+Omkrets = "∞";
+RoundedOmkrets = "∞";
 }
 
 alert(`Circumference: ${Omkrets}` + ` ${unit}\nRounded: ${RoundedOmkrets}` + ` ${unit}`);
@@ -120,8 +120,8 @@ if(radius != "") {
 let Volume = 3/4 * Math.PI * radius * radius * radius;
 let RoundedVolume = Math.round(Volume);
 if(Volume == Infinity) {
-Volume = ∞;
-RoundedVolume = ∞;
+Volume = "∞";
+RoundedVolume = "∞";
 }
 alert(`Volume: ${Volume} ${unit}³` + `\nRounded: ${RoundedVolume} ${unit}³`);
 } else {
