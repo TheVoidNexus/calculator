@@ -57,7 +57,7 @@ RundadC = "∞";
 	alert("The input cannot be empty.");
 } 
 } else {
-  alert("The input must be a number.");
+  alert("The input must be a (positive) number.");
 }
 }
 
@@ -81,7 +81,7 @@ alert(`Area: ${Arean}` + ` ${unit}²\nRounded: ${RoundedArea}` + ` ${unit}²`);
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a number.");
+alert("The input must be a (positive) number.");
 }
 }
 
@@ -105,7 +105,7 @@ alert(`Circumference: ${Omkrets}` + ` ${unit}\nRounded: ${RoundedOmkrets}` + ` $
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a number.");
+alert("The input must be a (positive) number.");
 }
 }
 
@@ -128,6 +128,111 @@ alert(`Volume: ${Volume} ${unit}³` + `\nRounded: ${RoundedVolume} ${unit}³`);
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a number.");
+alert("The input must be a (positive) number.");
+}
+}
+
+//
+
+
+function CubeOmkrets() {
+let a = prompt("What is a?","");
+if( a >= 0) {
+if( a != "") {
+	let b = prompt("What is b?","");
+	if( b >= 0) {
+	if (b != "") {
+let unit = prompt("What is the unit?","");
+	if(unit != "" {
+	let Omkrets = 2 * a + 2 * b;
+	let RoundedOmkrets = Math.round(Omkrets);
+alert(`Circumference: ${Omkrets} ${unit}\nRounded: ${RoundedOmkrets} ${unit}`);
+} else {
+alert("The input cannot be empty.");
+	}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
+}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
+}
+}
+
+//
+
+
+function CubeArea() {
+let a = prompt("What is a?","");
+if( a >= 0) {
+if( a != "") {
+	let b = prompt("What is b?","");
+	if( b >= 0) {
+	if (b != "") {
+let unit = prompt("What is the unit?","");
+	if(unit != "" {
+	let Area = a * b;
+	let RoundedArea = Math.round(Area);
+alert(`Area: ${Area} ${unit}\nRounded: ${RoundedArea} ${unit}`);
+} else {
+alert("The input cannot be empty.");
+	}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
+}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
+}
+}
+
+//
+
+
+function CubeVolume() {
+let a = prompt("What is a?","");
+if( a >= 0) {
+if( a != "") {
+	let b = prompt("What is b?","");
+	if( b >= 0) {
+	if ( b != "") {
+		let c = prompt("What is c?","");
+		if( c >= 0) {
+		if( c != "") {
+let unit = prompt("What is the unit?","");
+	if(unit != "") {
+	let Volume = a * b * c;
+	let RoundedVolume = Math.round(Volume);
+alert(`Area: ${Volume} ${unit}\nRounded: ${RoundedVolume} ${unit}`);
+} else {
+alert("The input cannot be empty.");
+	}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
+}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
+}
+} else {
+alert("The input cannot be empty.");
+}
+} else {
+alert("The input must be a (positive) number.");
 }
 }
