@@ -4,15 +4,24 @@ document.addEventListener("DOMContentLoaded", function() {
   let buttonCircelArea = document.getElementById("Button2");
   let buttonCircelOmkrets = document.getElementById("Button3");
   let buttonCircelVolume = document.getElementById("Button4");
+  let buttonCubeOmkrets = document.getElementById("Button5");
+  let buttonCubeArea = document.getElementById("Button6");
+  let buttonCubeVolume = document.getElementById("Button7");
  
   buttonCircelArea.style.display = "none";
   buttonCircelOmkrets.style.display = "none";
   buttonCircelVolume.style.display = "none";
+  buttonCubeOmkrets.style.display = "none";
+  buttonCubeArea.style.display = "none";
+  buttonCubeVolume.style.display = "none";
 
   buttonMain.addEventListener("click", function() {
     buttonCircelArea.style.display = (buttonCircelArea.style.display === "none") ? "block" : "none";
      buttonCircelOmkrets.style.display = (buttonCircelOmkrets.style.display === "none") ? "block" : "none";
      buttonCircelVolume.style.display = (buttonCircelVolume.style.display === "none") ? "block" : "none";
+	buttonCubeOmkrets.style.display = (buttonCubeOmkrets.style.display === "none") ? "block" : "none";
+	buttonCubeArea.style.display = (buttonCubeArea.style.display === "none") ? "block" : "none";
+	buttonCubeVolume.style.display = (buttonCubeVolume.style.display === "none") ? "block" : "none";
   });
 });
 
