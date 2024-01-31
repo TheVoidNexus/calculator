@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
      buttonCircelOmkrets.style.display = (buttonCircelOmkrets.style.display === "none") ? "block" : "none";
      buttonCircelVolume.style.display = (buttonCircelVolume.style.display === "none") ? "block" : "none";
   });
-  CircelMain.addEventListener("click", function() {
+  cubeMain.addEventListener("click", function() {
 	buttonCubeOmkrets.style.display = (buttonCubeOmkrets.style.display === "none") ? "block" : "none";
 	buttonCubeArea.style.display = (buttonCubeArea.style.display === "none") ? "block" : "none";
 	buttonCubeVolume.style.display = (buttonCubeVolume.style.display === "none") ? "block" : "none";
