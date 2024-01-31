@@ -1,0 +1,35 @@
+#header {
+  color: #008000;
+  width: 150px;
+}
+.Button1 {
+  width: 500px;
+  height: 75px;
+  font-size: 25px;
+}
+.Button2 {
+  border: 1px;
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #D3D3D3;
+}
+.Button3 {
+  border: 1px;
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #D3D3D3;
+}
+.Button4{
+  border: 1px;
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #D3D3D3;
+}
+.CircelMain {
+  width: 500px;
+  height: 75px;
+  font-size: 25px;
+}
