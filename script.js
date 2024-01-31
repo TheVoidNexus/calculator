@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
   buttonCubeArea.style.display = "none";
   buttonCubeVolume.style.display = "none";
 
-  buttonMain.addEventListener("click", function() {
+  CircelMain.addEventListener("click", function() {
     buttonCircelArea.style.display = (buttonCircelArea.style.display === "none") ? "block" : "none";
      buttonCircelOmkrets.style.display = (buttonCircelOmkrets.style.display === "none") ? "block" : "none";
      buttonCircelVolume.style.display = (buttonCircelVolume.style.display === "none") ? "block" : "none";
   });
-  cubeMain.addEventListener("click", function() {
+  CubeMain.addEventListener("click", function() {
 	buttonCubeOmkrets.style.display = (buttonCubeOmkrets.style.display === "none") ? "block" : "none";
 	buttonCubeArea.style.display = (buttonCubeArea.style.display === "none") ? "block" : "none";
 	buttonCubeVolume.style.display = (buttonCubeVolume.style.display === "none") ? "block" : "none";
