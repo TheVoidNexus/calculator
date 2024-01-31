@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	buttonCubeArea.style.display = (buttonCubeArea.style.display === "none") ? "block" : "none";
 	buttonCubeVolume.style.display = (buttonCubeVolume.style.display === "none") ? "block" : "none";
 });
-
+});
 
 
 function Hypotenusan() {
@@ -143,7 +143,7 @@ if( a != "") {
 	if( b >= 0) {
 	if (b != "") {
 let unit = prompt("What is the unit?","");
-	if(unit != ""*) {
+	if(unit != "") {
 	let Omkrets = 2 * a + 2 * b;
 	let RoundedOmkrets = Math.round(Omkrets);
 alert(`Circumference: ${Omkrets} ${unit}\nRounded: ${RoundedOmkrets} ${unit}`);
@@ -175,7 +175,7 @@ if( a != "") {
 	if( b >= 0) {
 	if (b != "") {
 let unit = prompt("What is the unit?","");
-	if(unit != "" {
+	if(unit != "") {
 	let Area = a * b;
 	let RoundedArea = Math.round(Area);
 alert(`Area: ${Area} ${unit}\nRounded: ${RoundedArea} ${unit}`);
