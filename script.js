@@ -1,4 +1,4 @@
-// Made by TheVoidNexus on 29.01.2024
+// Made by TheVoidNexus on 29.01.2024 | Last edited: 31.01.2024
 document.addEventListener("DOMContentLoaded", function() {
   let buttonMain = document.getElementById("CircelMain");
   let buttonCircelArea = document.getElementById("Button2");
@@ -19,31 +19,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function Hypotenusan() {
-let a = prompt("Vad är a?","");
+let a = prompt("What is a?","");
 a **= 2;
 if( a >= 0) {
 if( a != "") {
-let b = prompt("Vad är b?","");
+let b = prompt("What is b?","");
 b **= 2;
-let unit = prompt("Vilken är enheten?","");
+let unit = prompt("What is the unit?","");
 if( b >= 0) {
 if (b != "") {
   SquaredC = a + b;
   c = Math.sqrt(SquaredC);
   let RundadC = Math.round(c);
 
-  alert(`Hypotenusa: ${c}` + ` ${unit}\nRundad: ${RundadC}` + ` ${unit}`)
+  alert(`Hypotenuse: ${c}` + ` ${unit}\nRounded: ${RundadC}` + ` ${unit}`)
 } else {
-  alert("Error");
+  alert("The input cannot be empty.");
 }
 } else {
-	alert("Error");
+	alert("The input must be a number.");
 }
 } else {
-	alert("Error");
+	alert("The input cannot be empty.");
 } 
 } else {
-  alert("Error");
+  alert("The input must be a number.");
 }
 }
 
@@ -51,19 +51,19 @@ if (b != "") {
 
 
 function CircelArea() {
-let radius = prompt("Vad är radien?","");
-let unit = prompt("Vilken är enheten?","");
+let radius = prompt("What is the radius?","");
+let unit = prompt("What is the unit?","");
 if(radius >= 0) {
 if(radius != "") {
 let Arean = Math.PI * radius * radius
 let RoundedArea = Math.round(Arean);
 
-alert(`Area: ${Arean}` + ` ${unit}²\nRundad: ${RoundedArea}` + ` ${unit}²`);
+alert(`Area: ${Arean}` + ` ${unit}²\nRounded: ${RoundedArea}` + ` ${unit}²`);
 } else {
-alert("Error");
+alert("The input cannot be empty.");
 }
 } else {
-alert("Error");
+alert("The input must be a number.");
 }
 }
 
@@ -71,19 +71,19 @@ alert("Error");
 
 
 function CircelOmkrets() {
-let radius = prompt("Vad är radien?","");
-let unit = prompt("Vilken är enheten?","");
+let radius = prompt("What is the radius?","");
+let unit = prompt("What is the unit?","");
 if(radius >= 0) {
 if(radius != "") {
 let Omkrets = 2 * Math.PI * radius;
 let RoundedOmkrets = Math.round(Omkrets);
 
-alert(`Omkrets: ${Omkrets}` + ` ${unit}\nRundad: ${RoundedOmkrets}` + ` ${unit}`);
+alert(`Circumference: ${Omkrets}` + ` ${unit}\nRounded: ${RoundedOmkrets}` + ` ${unit}`);
 } else {
-alert("Error");
+alert("The input cannot be empty.");
 }
 } else {
-alert("Error");
+alert("The input must be a number.");
 }
 }
 
@@ -91,18 +91,18 @@ alert("Error");
 
 
 function CircelVolume() {
-let radius = prompt("Vad är radien?","");
-let unit = prompt("Vilken är enheten?","");
+let radius = prompt("What is the radius?","");
+let unit = prompt("What is the unit?","");
 if(radius >= 0) {
 if(radius != "") {
 let Volume = 3/4 * Math.PI * radius * radius * radius;
 let RoundedVolume = Math.round(Volume);
 
-alert(`Volumen: ${Volume} ${unit}³` + `\nRundad: ${RoundedVolume} ${unit}³`);
+alert(`Volume: ${Volume} ${unit}³` + `\nRounded: ${RoundedVolume} ${unit}³`);
 } else {
-alert("Error");
+alert("The input cannot be empty.");
 }
 } else {
-alert("Error");
+alert("The input must be a number.");
 }
 }
