@@ -117,7 +117,7 @@ let radius = prompt("What is the radius?","");
 let unit = prompt("What is the unit?","");
 if(radius >= 0) {
 if(radius != "") {
-let Volume = 3/4 * Math.PI * radius * radius * radius;
+let Volume = (4 * Math.PI * radius * radius * radius) / 3;
 let RoundedVolume = Math.round(Volume);
 if(Volume == Infinity) {
 Volume = "∞";
@@ -128,7 +128,7 @@ alert(`Volume: ${Volume} ${unit}³` + `\nRounded: ${RoundedVolume} ${unit}³`);
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 }
 
@@ -154,13 +154,13 @@ alert("The input cannot be empty.");
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 } else {
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 }
 
@@ -186,13 +186,13 @@ alert("The input cannot be empty.");
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 } else {
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 }
 
@@ -221,18 +221,18 @@ alert("The input cannot be empty.");
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 } else {
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 } else {
 alert("The input cannot be empty.");
 }
 } else {
-alert("The input must be a (positive) number.");
+alert("The input must be a number.");
 }
 }
