@@ -8,6 +8,13 @@
   </head>
   <body>
     <h1 id="header">Calculator</h1>
+    <div id="popup" class="popup" style="display: none;">
+      <input type="text" id="inputField" placeholder="Enter your equation.">
+      <button onclick="submitData()">=</button>
+      <button onclick="closePopup()">Close</button>
+    </div>
+
+    <button onclick="openPopup()" class="openPopup">Calculator</button>
      <button onclick="Hypotenusan()" class="Button1" id="Button1">Calculate Hypotenuse
     </button> <br> <br>
     <button class="CubeMain" id="CubeMain">Calculate Rectangle/Cuboid</button>

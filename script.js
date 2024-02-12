@@ -27,6 +27,21 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 });
 
+function openPopup() {
+	let popup = document.getElementById("popup");
+	popup.style.display = "block";
+  }
+  
+  function closePopup() {
+	let popup = document.getElementById("popup");
+	popup.style.display = "none";
+  }
+  
+  function submitData() {
+	let inputText = document.getElementById("inputField").value;
+	alert("Input:" + inputText);
+	closePopup();
+  }
 
 function Hypotenusan() {
 let a = prompt("What is a?","");
