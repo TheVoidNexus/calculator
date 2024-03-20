@@ -1,91 +1,124 @@
-#header {
-  color: #008000;
-  width: 150px;
-}
-.Button1 {
-  width: 500px;
-  height: 75px;
-  font-size: 25px;
-}
-.Button2 {
-  border: 1px;
-  width: 500px;
-  height: 50px;
-  font-size: 25px;
-  background-color: #D3D3D3;
-}
-.Button3 {
-  border: 1px;
-  width: 500px;
-  height: 50px;
-  font-size: 25px;
-  background-color: #D3D3D3;
-}
-.Button4{
-  border: 1px;
-  width: 500px;
-  height: 50px;
-  font-size: 25px;
-  background-color: #D3D3D3;
-}
-.CircelMain {
-  width: 500px;
-  height: 75px;
-  font-size: 25px;
-}
-.Button5{
-  border: 1px;
-  width: 500px;
-  height: 50px;
-  font-size: 25px;
-  background-color: #D3D3D3;
-}
-.Button6{
-  border: 1px;
-  width: 500px;
-  height: 50px;
-  font-size: 25px;
-  background-color: #D3D3D3;
-}
-.Button7{
-  border: 1px;
-  width: 500px;
-  height: 50px;
-  font-size: 25px;
-  background-color: #D3D3D3;
-}
-.CubeMain {
-  width: 500px;
-  height: 75px;
-  font-size: 25px;
-}
-.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+html {
+  background-image: url('data:image/jpeg;base64,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');
 }
 
-.popup input[type="text"] {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 5px;
+@keyframes Main-Button {
+  0% {
+    border-color: rgba(59, 249, 0, 0.582);
+    box-shadow: 0 0 15px rgba(59, 249, 0, 0.582);
+}
+50% {
+    border-color: #00ffd9f4;
+    box-shadow: 0 0 20px #00ffd9f4;
+}
+100% {
+    border-color: rgba(59, 249, 0, 0.582);
+    box-shadow: 0 0 15px rgba(59, 249, 0, 0.582);
+}
 }
 
-.popup button {
-  padding: 5px 10px;
-  margin-right: 10px;
-  cursor: pointer;
+@keyframes Main-Title {
+  from {
+    text-shadow: 0 0 10px rgba(59, 249, 0, 0.582), 0 0 20px rgba(59, 249, 0, 0.582), 0 0 30px rgba(59, 249, 0, 0.582), 0 0 40px rgba(59, 249, 0, 0.582), 0 0 50px rgba(59, 249, 0, 0.582), 0 0 60px rgba(59, 249, 0, 0.582), 0 0 70px rgba(59, 249, 0, 0.582);
+  }
+  to {
+    text-shadow: 0 0 10px #ffea00f4, 0 0 20px #ffea00f4, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #ffea00f4, 0 0 80px #ffea00f4;
+  }
 }
-.openPopup{
-  border: 1px;
-  width: 500px;
-  height: 50px;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.layer1, .layer2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.layer3, .layer4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.layer3 {
+  margin-left: 38.25%;
+}
+.layer4 {
+  width: 23%;
+  margin-right: 3.5%;
+}
+
+.Button1, .CubeMain, .CircelMain {
+  color: white;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7886cURBTx0DzaCBVYLHODBGkRSzja3s-_j9AruVU_7-ACMnjSwB92jjsr_V8rTV-bW4&usqp=CAU');
+  width: 30%;
+  height: 75px;
   font-size: 25px;
-  background-color: #D3D3D3;
+  animation: Main-Button 5s infinite alternate;
+}
+
+.Button2, .Button3, .Button4, .Button5, .Button6, .Button7 {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrgRtDvVGa1f0DHTkMxseA-UXSTF_Plaf3Lw&usqp=CAU');
+  color: white;
+  width: 125%;
+  height: 75px;
+  font-size: 25px;
+  border-color: darkslategray;
+  border-style: solid;
+}
+
+.database, .voidclicker {
+  width: 25%;
+  height: 40px;
+  border: solid lightgray;
+  border-radius: 20px;
+  border-width: 2px;
+  color: whitesmoke;
+  background: transparent;
+  display:inline-table;
+}
+
+.database:hover, .voidclicker:hover {
+  opacity: 0.9;
+  border-color: lightblue;
+  color: lightblue;
+}
+
+.main {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  flex-grow: 1;
+}
+
+.main:hover {
+  color: lightblue;
+}
+
+.title {
+  display: flex;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0 auto;
+  width: fit-content;
+  color: whitesmoke;
+  flex-grow: 0.2;
+  animation: Main-Title 3s infinite alternate;
+}
+
+.title:hover {
+  color: lightblue;
 }

@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="mstyle.css" media="screen and (max-width: 767px)">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <h1 id="header">Calculator</h1>
-    <div id="popup" class="popup" style="display: none;">
-      <input type="text" id="inputField" placeholder="Enter your equation.">
-      <button onclick="submitData()">=</button>
-      <button onclick="closePopup()">Close</button>
+</head>
+<body>
+    <div class="container">
+        <a href="https://thevoidnexus.github.io" id="main" class="main">thevoidnexus.github.io</a>
+        <p class="title">Calculator</p>
+        <div class="container2">
+            <button onclick="redirect()" class="database">Database</button>
+            <button onclick="redirect2()" class="voidclicker">VoidClicker</button>
+        </div>
     </div>
-
-    <button onclick="openPopup()" class="openPopup">Calculator</button>
-     <button onclick="Hypotenusan()" class="Button1" id="Button1">Calculate Hypotenuse
-    </button> <br> <br>
-    <button class="CubeMain" id="CubeMain">Calculate Rectangle/Cuboid</button>
+    <hr>
     <br>
-    <button onclick="CubeOmkrets()" class="Button5" id="Button5">Circumference of rectangle</button>
-    <button onclick="CubeArea()" class="Button6" id="Button6">Area of rectangle</button>
-    <button onclick="CubeVolume()" class="Button7" id="Button7">Volume of cuboid</button>
-    <br>
-    <button class="CircelMain" id="CircelMain">
-    Calculate Circle/Sphere
-    </button> <br>
-    <button onclick="CircelOmkrets()" class="Button3" id="Button3">
-    Circumference of circle</button>
-    <button onclick="CircelArea()" class="Button2" id="Button2">Area of circle</button>
-    <button onclick="CircelVolume()" class="Button4" id="Button4">
-    Volume of sphere</button>
-  </body>
+    <div class="layer1">
+        <button onclick="Hypotenusan()" class="Button1" id="Button1">Calculate Hypotenuse</button>
+        <button class="CubeMain" id="CubeMain">Calculate Rectangle/Cuboid</button>
+        <button class="CircelMain" id="CircelMain">Calculate Circle/Sphere</button>
+    </div>
+    <div class="layer2">
+        <div class="layer3">
+            <button onclick="CubeOmkrets()" class="Button2" id="Button5">Circumference of rectangle</button>
+            <button onclick="CubeArea()" class="Button3" id="Button6">Area of rectangle</button>
+            <button onclick="CubeVolume()" class="Button4" id="Button7">Volume of cuboid</button>
+        </div>
+        <div class="layer4">
+            <button onclick="CircelOmkrets()" class="Button5" id="Button3">Circumference of circle</button>
+            <button onclick="CircelArea()" class="Button6" id="Button2">Area of circle</button>
+            <button onclick="CircelVolume()" class="Button7" id="Button4">Volume of sphere</button>
+        </div>
+    </div>
+</body>
 </html>

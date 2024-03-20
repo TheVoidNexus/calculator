@@ -1,4 +1,6 @@
-// Made by TheVoidNexus on 29.01.2024 | Last edited: 31.01.2024
+// Made by TheVoidNexus on 29.01.2024 | Last edited: 20.03.2024
+
+
 document.addEventListener("DOMContentLoaded", function() {
   let buttonMain = document.getElementById("CircelMain");
   let buttonCircelArea = document.getElementById("Button2");
