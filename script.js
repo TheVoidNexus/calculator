@@ -1,4 +1,4 @@
-// Made by TheVoidNexus on 29.01.2024 | Last edited: 20.03.2024
+// Made by TheVoidNexus on 29.01.2024 | Last edited: 24.04.2024
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -252,4 +252,12 @@ alert("The input cannot be empty.");
 } else {
 alert("The input must be a number.");
 }
+}
+
+
+function redirect() {
+	window.location.href = "https://thevoidnexus.github.io/database"
+}
+function redirect2() {
+	window.location.href = "https://thevoidnexus.github.io"
 }
